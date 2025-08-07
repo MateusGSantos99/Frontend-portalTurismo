@@ -9,7 +9,7 @@ const LoginForm = () => {
     const handleSubmit = async (e) => {
       e.preventeDefault();
       try {
-        const response = await axios.post("http://localhost:5000/api/auth/login", {
+        const response = await axios.post("https://backend-portalturismo-5ao1.onrender.com/api/auth/login", {
             email,
             password: senha
         })
